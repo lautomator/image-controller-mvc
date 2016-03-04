@@ -1,0 +1,38 @@
+.container {
+    border: dotted 1px gray;
+    margin-top: 25px;
+    max-width: 450px;
+    overflow: hidden;
+}
+
+.image_holder {
+    background: url(../img/transparency-grid.gif) repeat;
+    max-width: 450px;
+}
+
+.controller {
+    border-bottom: dotted 1px gray;
+    padding: 25px;
+}
+
+.controller:last-of-type {
+  border-bottom: 0;
+}
+
+.source_image {
+    left: 0;
+    opacity: 1;
+    background: white;
+    /*background: #939598;*/
+}
+
+@media (min-width: 993px) {
+    .controller {
+        border-right: dotted 1px gray;
+        border-bottom: 0;
+    }
+
+    .controller:last-of-type {
+      border-right: 0;
+    }
+}
