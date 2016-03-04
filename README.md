@@ -7,6 +7,3 @@ This project is based upon [Sam Halperin's](https://github.com/shalperin) from [
 To get this going, download this repository and `cd` into the root folder. Start an HTTP server: `python -m SimpleHTTPServer 9000`. In your browser go to [localhost:9000](http://localhost:9000/). If you do not have [Python](http://python.org), simply open `index.html` from your web browser.
 
 You can also see this demo staged here: TBA.
-
-## Photography
-The Philip Glass Ensemble rehearsing, UCLA, CA, ca. 1977 ([source](http://www.newmusicbox.org/assets/16/images/PhilipGlass1977.jpg)).
