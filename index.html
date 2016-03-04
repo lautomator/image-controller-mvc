@@ -17,9 +17,26 @@
     </head>
 
     <body>
-        <pre>hello world!</pre>
+        <div class="container">
+            <div class="row">
+                <!-- the controls -->
+                <form>
+                    <!-- brightness -->
+                    <input type="range" name="brightness" min="0" max="10">
+                    <!-- contrast -->
+                    <input type="range" name="contrast" min="0" max="10">
+                    <!-- opacity -->
+                    <input type="range" name="opacity" min="0" max="100">
+                    <!-- rotation -->
+                    <input type="range" name="rotation" min="0" max="360">
+                </form>
 
+                <p>brightness: <span data-bind="text: brightness">0</span></p>
+                <p>contrast: <span data-bind="text: contrast">0</span></p>
+                <p>opacity: <span data-bind="text: opacity">0</span></p>
 
+            </div>
+        </div><!-- /container -->
 
         <!-- javascript -->
         <script src="js/lib/jquery.min.js"></script>
@@ -28,7 +45,3 @@
         <script src="js/main.js"></script>
     </body>
 </html>
-
-
-
-
