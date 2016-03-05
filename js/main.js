@@ -24,7 +24,22 @@ var viewModel = {
         /*
             sets the brightness
         */
-        console.log(this.brightness());
+        // set the opacity to 100%
+        this.opacity(100);
+        this.setOpacity();
+
+        // determine tint or shade
+        if (this.brightness() >= 50) {
+            // 1.) Make the white box visible at 0 opacity.
+            // 2.) As the value of the slider increases (this.brightness()),
+            //     increase the opacity of the white box.
+        } else {
+            // brightness is less than 50
+            // Add the black background
+            // lower of the image as the value of brightness decreases
+        }
+
+        console.log('brightness:', this.brightness());
     },
 
     setContrast: function() {
@@ -45,6 +60,7 @@ var viewModel = {
         // Therefore:
         var opacity = this.opacity() / 100;
 
+        $('.image_holder').removeClass('has_brightness');
         $('.source_image').css('opacity', opacity);
     },
 

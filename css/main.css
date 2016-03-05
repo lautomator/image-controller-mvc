@@ -2,7 +2,7 @@
     border: dotted 1px gray;
     margin-top: 25px;
     max-width: 450px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 .image_holder {
@@ -20,10 +20,14 @@
 }
 
 .source_image {
-    left: 0;
     opacity: 1;
-    -webkit-filter: brightness(1);
-    filter: brightness(1);
+}
+
+.has_brightness {
+}
+
+.has_darkness {
+    background: black;
 }
 
 .is_grayscale {
