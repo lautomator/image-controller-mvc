@@ -23,13 +23,6 @@
     opacity: 1;
 }
 
-.has_brightness {
-}
-
-.has_darkness {
-    background: black;
-}
-
 .is_grayscale {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);

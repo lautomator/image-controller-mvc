@@ -34,14 +34,14 @@
 
                         <!-- brightness -->
                         <div class="col-md-3 controller">
-                            <input type="range" name="brightness" min="0" max="100" data-bind="value: brightness, event: { change: setBrightness }">
-                            <p>brightness:<br><span data-bind="text: brightness">0</span>%</p>
+                            <input type="range" name="brightness" min="-10" max="10" data-bind="value: brightness, event: { change: setBrightness }">
+                            <p>brightness:<br><span data-bind="text: brightness">0</span></p>
                         </div><!-- /brightness -->
 
                         <!-- contrast -->
                         <div class="col-md-3 controller">
-                            <input type="range" name="contrast" min="0" max="100" data-bind="value: contrast, event: { change: setContrast }">
-                            <p>contrast:<br><span data-bind="text: contrast">0</span>%</p>
+                            <input type="range" name="contrast" min="-10" max="10" data-bind="value: contrast, event: { change: setContrast }">
+                            <p>contrast:<br><span data-bind="text: contrast">0</span></p>
                         </div><!-- /contrast -->
 
                         <!-- opacity -->
