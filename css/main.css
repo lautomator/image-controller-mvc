@@ -22,8 +22,13 @@
 .source_image {
     left: 0;
     opacity: 1;
-    background: white;
-    /*background: #939598;*/
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+
+.is_grayscale {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 @media (min-width: 993px) {

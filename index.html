@@ -20,38 +20,47 @@
         <!-- This is the view -->
         <div class="container">
             <div class="row">
+                <!-- image holder -->
                 <div class="image_holder">
                     <div class="contrast_panel"></div>
                     <img class="img-responsive source_image" data-bind="attr: { src: image }" alt="creative commons image">
                 </div><!-- /image holder -->
 
+                <!-- the controls -->
                 <div class="controls">
-                    <!-- the controls -->
                     <div class="row">
 
                         <!-- brightness -->
-                        <div class="col-md-4 controller">
+                        <div class="col-md-3 controller">
                             <form>
                                 <input type="range" name="brightness" min="0" max="100" data-bind="value: brightness, event: { change: setBrightness }">
                             </form>
-                            <p>brightness: <span data-bind="text: brightness">0</span></p>
+                            <p>brightness:<br><span data-bind="text: brightness">0</span>%</p>
                         </div><!-- /brightness -->
 
                         <!-- contrast -->
-                        <div class="col-md-4 controller">
+                        <div class="col-md-3 controller">
                             <form>
                                 <input type="range" name="contrast" min="0" max="100" data-bind="value: contrast, event: { change: setContrast }">
                             </form>
-                            <p>contrast: <span data-bind="text: contrast">0</span></p>
+                            <p>contrast:<br><span data-bind="text: contrast">0</span>%</p>
                         </div><!-- /contrast -->
 
                         <!-- opacity -->
-                        <div class="col-md-4 controller">
+                        <div class="col-md-3 controller">
                             <form>
-                                <input type="range" name="opacity" min="0" max="10" data-bind="value: opacity, event: { change: setOpacity }">
+                                <input type="range" name="opacity" min="0" max="100" data-bind="value: opacity, event: { change: setOpacity }">
                             </form>
-                            <p>opacity: <span data-bind="text: opacity">0</span></p>
+                            <p>opacity:<br><span data-bind="text: opacity">0</span>%</p>
                         </div><!-- /opacity -->
+
+                        <!-- grayscale -->
+                        <div class="col-md-3 controller">
+                            <form>
+                                <input type="checkbox" name="grayscale" data-bind="value: grayscale, event: { change: setGrayscale }">
+                            </form>
+                            <p>grayscale:<br><span data-bind="text: grayscale">0</span></p>
+                        </div><!-- /grayscale -->
                     </div><!-- /row -->
                 </div><!-- /controls -->
             </div><!-- /row -->
