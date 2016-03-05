@@ -40,6 +40,7 @@ var viewModel = {
         } else {
             opacity = 1 + (this.brightness() * 0.1);
 
+            // set the background as black and fade the image
             $('.image_holder').css('background', 'black');
             $('.source_image').css('opacity', opacity);
         }
