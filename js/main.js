@@ -50,8 +50,29 @@ var viewModel = {
         /*
             sets the contrast
         */
-        // TODO
-        console.log(this.contrast());
+        // reset the opacity to 100%
+        this.opacity(100);
+        this.setOpacity();
+
+        var opacity;
+
+        // determine degree of contrast:
+        if (this.contrast() > 0) {
+            opacity = (10 - this.contrast()) * 0.1;
+
+            // set the background as blue and fade the image
+            // This is not really contrast but is only being
+            // used for the purposes of the demo.
+            $('.image_holder').css('background', 'blue');
+            $('.source_image').css('opacity', opacity);
+
+        } else {
+            opacity = 1 + (this.contrast() * 0.1);
+
+            // set the background as gray and fade the image
+            $('.image_holder').css('background', 'gray');
+            $('.source_image').css('opacity', opacity);
+        }
     },
 
     setOpacity: function() {
@@ -65,7 +86,14 @@ var viewModel = {
         // Therefore:
         var opacity = this.opacity() / 100;
 
-        $('.image_holder').removeClass('has_brightness');
+        // reset other function
+        // this.brightness(0);
+        // this.setBrightness();
+        // this.contrast(0);
+        // this.setContrast();
+
+        // reset the background
+        $('.image_holder').css('background', 'none');
         $('.source_image').css('opacity', opacity);
     },
 

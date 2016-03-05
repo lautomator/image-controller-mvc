@@ -5,8 +5,11 @@
     /*overflow: hidden;*/
 }
 
-.image_holder {
+.background_pattern {
     background: url(../img/transparency-grid.gif) repeat;
+}
+
+.image_holder {
     max-width: 450px;
 }
 
