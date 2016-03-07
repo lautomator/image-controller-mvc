@@ -1,5 +1,8 @@
 var data = {
     /* This is the model. */
+    title: 'Image Manipulator: MVC',
+    description: 'This is an MVC design pattern demo using Knockout.',
+    author: 'John Merigliano',
     sourceImage: 'https://upload.wikimedia.org/wikipedia/commons/d/d4/Gin_and_Tonic_with_ingredients.jpg',
     // default params
     brightness: 0, // -10 - 10
@@ -158,6 +161,11 @@ var viewModel = {
         this.grayscale(data.grayscale);
         this.image(data.sourceImage);
         this.lastUsed(data.lastUsed);
+
+        // static params
+        var title = data.title,
+            author = data.author,
+            description = data.description;
     }
 };
 

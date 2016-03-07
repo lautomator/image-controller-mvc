@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="This is an MVC design pattern demo using Knockout.">
-        <meta name="author" content="John Merigliano">
+        <meta name="description" data-bind="attr: { content: description }">
+        <meta name="author" data-bind="attr: { content: author }">
         <!-- <link rel="icon" href=""> -->
 
-        <title>MVC Demo</title>
+        <title data-bind="text: title"></title>
 
         <!-- css -->
         <link href="css/lib/bootstrap.min.css" rel="stylesheet">
