@@ -31,6 +31,10 @@
     filter: grayscale(100%);
 }
 
+hr {
+    margin: 0;
+}
+
 @media (min-width: 993px) {
     .controller {
         border-right: dotted 1px gray;

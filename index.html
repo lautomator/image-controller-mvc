@@ -31,30 +31,39 @@
                 <!-- the controls -->
                 <div class="controls">
                     <div class="row">
-
                         <!-- brightness -->
-                        <div class="col-md-3 controller">
+                        <div class="col-md-4 controller">
                             <input type="range" name="brightness" min="-10" max="10" data-bind="value: brightness, event: { change: setBrightness }">
                             <p>brightness:<br><span data-bind="text: brightness">0</span></p>
                         </div><!-- /brightness -->
 
-                        <!-- contrast -->
-                        <div class="col-md-3 controller">
-                            <input type="range" name="contrast" min="-10" max="10" data-bind="value: contrast, event: { change: setContrast }">
-                            <p>contrast:<br><span data-bind="text: contrast">0</span></p>
-                        </div><!-- /contrast -->
-
                         <!-- opacity -->
-                        <div class="col-md-3 controller">
+                        <div class="col-md-4 controller">
                             <input type="range" name="opacity" min="0" max="100" data-bind="value: opacity, event: { change: setOpacity }">
                             <p>opacity:<br><span data-bind="text: opacity">0</span>%</p>
                         </div><!-- /opacity -->
 
                         <!-- grayscale -->
-                        <div class="col-md-3 controller">
+                        <div class="col-md-4 controller">
                             <input type="checkbox" name="grayscale" data-bind="value: grayscale, event: { change: setGrayscale }">
                             <p>grayscale:<br><span data-bind="text: grayscale">0</span></p>
                         </div><!-- /grayscale -->
+                    </div><!-- /row -->
+
+                    <hr>
+
+                    <div class="row">
+                        <!-- coolness -->
+                        <div class="col-md-6 controller">
+                            <input type="range" name="coolness" min="0" max="10" data-bind="value: coolness, event: { change: setCoolness }">
+                            <p>cooler:<br><span data-bind="text: coolness">0</span></p>
+                        </div><!-- /coolness -->
+
+                        <!-- warmness -->
+                        <div class="col-md-6 controller">
+                            <input type="range" name="warmness" min="0" max="10" data-bind="value: warmness, event: { change: setWarmness }">
+                            <p>warmer:<br><span data-bind="text: warmness">0</span></p>
+                        </div><!-- /warmness -->
                     </div><!-- /row -->
                 </div><!-- /controls -->
             </div><!-- /row -->
