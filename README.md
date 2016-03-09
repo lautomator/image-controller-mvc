@@ -6,7 +6,7 @@ This project is based upon [Sam Halperin's](https://github.com/shalperin) articl
 ## Setup
 To get this going, download this repository and `cd` into the root folder. Start an HTTP server: `python -m SimpleHTTPServer 9000`. In your browser go to [localhost:9000](http://localhost:9000/). If you do not have [Python](http://python.org), simply open `index.html` from your web browser.
 
-You can also see this demo staged here: TBA.
+You can also see this demo staged here: [mvc demo](http://23.92.19.42/).
 
 ![screenshot of the intial demo screen]
 (https://dl.dropboxusercontent.com/u/54256847/mvc-demo.png)
